@@ -1,69 +1,61 @@
 # ProyectoPhinixHub
-pipeline {
-    agent any
-
-    stages {
-        stage('Clonar Repositorio') {
-            steps {
-                script {
-                    echo 'Iniciando clonación del repositorio...'
-                    checkout scm
-                }
-            }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Repositorio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
         }
 
-        stage('Compilar') {
-            steps {
-                script {
-                    echo 'Iniciando compilación...'
-                    sh 'tu_comando_de_compilacion'
-                }
-            }
+        h1 {
+            color: #0066cc;
         }
 
-        stage('Pruebas Unitarias') {
-            steps {
-                script {
-                    echo 'Iniciando pruebas unitarias...'
-                    sh 'tu_comando_de_pruebas_unitarias'
-                }
-            }
+        p {
+            color: #666;
         }
 
-        stage('Despliegue a Entorno de Pruebas') {
-            steps {
-                script {
-                    echo 'Iniciando despliegue a entorno de pruebas...'
-                    sh 'tu_comando_de_despliegue_pruebas'
-                }
-            }
+        a {
+            color: #0066cc;
+            text-decoration: none;
         }
 
-        stage('Pruebas de Integración') {
-            steps {
-                script {
-                    echo 'Iniciando pruebas de integración...'
-                    sh 'tu_comando_de_pruebas_integracion'
-                }
-            }
+        a:hover {
+            text-decoration: underline;
         }
 
-        stage('Despliegue a Producción') {
-            steps {
-                script {
-                    echo 'Iniciando despliegue a entorno de producción...'
-                    sh 'tu_comando_de_despliegue_produccion'
-                }
-            }
+        ul {
+            list-style: none;
+            padding: 0;
         }
-    }
 
-    post {
-        success {
-            echo 'El pipeline se ejecutó exitosamente. Puedes agregar más acciones aquí en caso de éxito.'
+        li {
+            margin-bottom: 8px;
         }
-        failure {
-            echo 'El pipeline falló. Puedes agregar más acciones aquí en caso de fallo.'
-        }
-    }
-}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Repositorio</h1>
+        <p>Este es un ejemplo de un archivo HTML para tu repositorio. Puedes personalizarlo según tus necesidades.</p>
+    </header>
+
+    <section>
+        <h2>Recursos Útiles:</h2>
+        <ul>
+            <li><a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Guía de Markdown de GitHub</a></li>
+            <li><a href="https://opensource.com/resources/learn-html" target="_blank">Recursos para Aprender HTML</a></li>
+            <li><a href="https://www.git-scm.com/doc" target="_blank">Documentación de Git</a></li>
+        </ul>
+    </section>
+</body>
+</html>
+
+      
+    
